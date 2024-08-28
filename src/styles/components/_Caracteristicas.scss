@@ -1,0 +1,120 @@
+.caracteristicas {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    height: 1450px;
+  }
+  
+  & .title {
+
+    @media screen and (min-width: 768px) {
+      transform: translate(0, 35px);
+    }
+    & h1 {
+      text-align: center;
+      font-weight: 500;
+      line-height: 1.2;
+      display: inline-block;
+      color: #922c88;
+      font-size: 2rem;
+    }
+
+    & h4 {
+      font-weight: 400;
+      text-align: center;
+      color: #8f8f8f;
+      font-size: 1.1rem;
+    }
+  }
+  & main {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+      gap: 25px;
+    }
+
+    & section {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      @media screen and (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
+
+      & aside {
+        @media screen and (min-width: 768px) {
+          width: 50%;
+        }
+
+        & p, h4 {
+          font-weight: 400;
+          color: #909090;
+          text-align: start;
+        }
+
+        & h3 {
+          text-align: start;
+          font-weight: 500;
+          color: #922c88;
+          font-size: 1.5rem;
+        }
+
+        & div {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          text-align: start;
+        }
+      }
+    }
+
+    & section:nth-child(1) {
+      & div {
+        height: 150px;
+      }
+
+    }
+
+    & section:nth-child(2) {
+        & div {
+            height: 350px;
+
+            @media screen and (min-width: 768px) {
+              height: 280px;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+          flex-direction: row-reverse;
+        }
+
+    }
+
+    & section:nth-child(3) {
+        & div {
+            height: 130px;
+        }
+    }
+
+    & section:nth-child(4) {
+      & div {
+          height: 30px;
+      }
+
+      @media screen and (min-width: 768px) {
+        flex-direction: row-reverse;
+      }
+  }
+  }
+}

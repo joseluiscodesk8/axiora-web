@@ -1,0 +1,44 @@
+.welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    height: 350px;
+    padding: 1%;
+
+    & h2 {
+        font-weight: 500;
+        color: #922c88;
+        font-size: 2rem;
+    }
+
+    & p, span {
+        font-weight: 400;
+        text-align: center;
+        color: #8f8f8f;
+        font-size: 1.1rem;
+    }
+
+    & button {
+        text-align: center;
+        border-radius: 50px;
+        outline: initial;
+        font-size: .8rem;
+        background-color: #4556ac;
+        border-color: #4556ac;
+        color: #fff;
+        line-height: 1.5;
+        font-weight: 700;
+        letter-spacing: .05rem;
+        padding: 1rem 3.5rem .9rem;
+        transition: .3s ease-in-out;
+
+        &:hover {
+            background-color: #0026ff;
+            box-shadow: inset 0 0 15px #736eb9, inset 0 0 5px #000000;
+          }
+    }
+}
